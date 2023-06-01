@@ -1,0 +1,16 @@
+apply from: "$rootProject.projectDir/buildScript/router/lib_arouter_build.gradle"
+//apply plugin: 'com.alibaba.arouter'
+
+android {
+
+    defaultConfig {
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+}
+
+dependencies {
+    api "com.alibaba:arouter-api:$rootProject.router_api_version"
+//    classpath "com.alibaba:arouter-register:$rootProject.router_register_version"
+}

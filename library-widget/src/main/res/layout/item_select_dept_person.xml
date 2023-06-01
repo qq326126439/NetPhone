@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_label_gray_bg_6"
+    android:padding="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_10">
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:background="@drawable/circle_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        tools:text="张三"
+        app:layout_constraintTop_toTopOf="@id/rl_icon"
+        app:layout_constraintBottom_toTopOf="@id/tv_info_content"
+        app:layout_constraintStart_toEndOf="@id/rl_icon"
+        android:layout_marginStart="@dimen/dp_8"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:textColor="@color/text_color_3"
+        android:textSize="@dimen/sp_16"
+        tools:text="17345669900"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_title"
+        app:layout_constraintBottom_toBottomOf="@id/rl_icon"
+        app:layout_constraintStart_toEndOf="@id/rl_icon"
+        android:layout_marginStart="@dimen/dp_8"/>
+
+    <ImageView
+        android:id="@+id/check_box"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:src="@drawable/iv_no_select_gray"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

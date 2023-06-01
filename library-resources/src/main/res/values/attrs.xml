@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="tint_color" format="color" />
+        <attr name="checked_text_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SectorCircleProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_circle_radius" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_fill_mode" format="enum">
+            <enum name="rotate" value="0" />
+            <enum name="rising_water" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <!--loading attributes-->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+
+
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+
+        <attr name="borderwidth" format="dimension" />
+        <attr name="bordercolor" format="color" />
+        <attr name="borderoverlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="circle_fill_color" format="color" />
+        <attr name="circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBarStyle">
+        <attr name="searchBarBackground" format="integer" />
+        <attr name="searchBarClearIcon" format="integer" />
+        <attr name="searchBarHint" format="string" />
+        <attr name="searchBarTextColor" format="color" />
+        <attr name="searchBarTextColorHint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+
+    <!--菜单所在位置-->
+    <attr name="position" format="enum">
+        <enum name="left_top" value="1" />
+        <enum name="right_top" value="2" />
+        <enum name="left_bottom" value="4" />
+        <enum name="right_bottom" value="8" />
+    </attr>
+    <!--半径 -->
+    <attr name="arc_radius" format="dimension" />
+    <attr name="fill_radius" format="dimension" />
+    <attr name="fill_color" format="color|reference" />
+    <declare-styleable name="ArcMenuView">
+        <attr name="position" />
+        <attr name="arc_radius" />
+        <attr name="fill_color" />
+        <attr name="fill_radius" />
+    </declare-styleable>
+
+    <!--pagerslidingtabstrip-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="reference" />
+        <attr name="pstsTabTextStyle" format="reference">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTabTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextAlpha" format="integer" />
+        <attr name="pstsTabTextFontFamily" format="string" />
+    </declare-styleable>
+
+    <!--dropmenu-->
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color" />
+        <attr name="dddividerColor" format="color" />
+        <attr name="ddtextSelectedColor" format="color" />
+        <attr name="ddtextUnselectedColor" format="color" />
+        <attr name="ddmenuBackgroundColor" format="color" />
+        <attr name="ddmaskColor" format="color" />
+        <attr name="ddmenuTextSize" format="dimension" />
+        <attr name="ddmenuMaxHeight" format="dimension" />
+        <attr name="ddmenuSelectedIcon" format="reference" />
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+    </declare-styleable>
+    <!--主页悬浮球-->
+    <declare-styleable name="FabToolbar">
+        <attr name="tb_color" format="color" />
+        <attr name="tb_anim_duration" format="integer" />
+        <attr name="tb_button_gravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="tb_container_gravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="circleTextView">
+        <attr name="ct_backgroundColor" format="color" />
+        <attr name="ct_border_width" format="dimension" />
+        <attr name="ct_border_color" format="color" />
+        <attr name="ct_border_alpha" format="float" />
+        <attr name="ct_type" format="enum">
+            <enum name="shadow_gradual" value="1" />
+            <enum name="shadow_alpha" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer" />
+        <attr name="arc_angle" format="float" />
+        <attr name="arc_stroke_width" format="dimension" />
+        <attr name="arc_max" format="integer" />
+        <attr name="arc_unfinished_color" format="color" />
+        <attr name="arc_finished_color" format="color" />
+        <attr name="arc_text_size" format="dimension" />
+        <attr name="arc_text_color" format="color" />
+        <attr name="arc_suffix_text" format="string" />
+        <attr name="arc_suffix_text_size" format="dimension" />
+        <attr name="arc_suffix_text_padding" format="dimension" />
+        <attr name="arc_bottom_text" format="string" />
+        <attr name="arc_bottom_text_size" format="dimension" />
+    </declare-styleable>
+
+
+
+    <!--通讯录右侧索引-->
+    <attr name="indexBarTextSize" format="dimension" />
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarTextColor" format="color" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean" />
+        <attr name="max_select" format="integer" />
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmartSwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="WaitingDots">
+        <attr name="dotsColor" format="color" />
+        <attr name="period" format="integer" />
+        <attr name="jumpHeight" format="integer" />
+        <attr name="autoPlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingLayout">
+
+        <attr name="isFirstVisible" format="boolean" />
+        <attr name="pageBackground" format="reference|color" />
+
+    </declare-styleable>
+
+    <!-- 末行对齐方式 -->
+    <declare-styleable name="AlignTextView">
+        <attr name="align" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 标点转换 -->
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="drawable_right" format="reference" />
+        <attr name="drawable_color" format="color" />
+        <attr name="drawable_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="KMPAutoComplTextView">
+        <attr name="completionHighlightColor" format="reference|color" />
+        <attr name="completionTextColor" format="reference|color" />
+        <attr name="completionTextSize" format="dimension" />
+        <attr name="completionIgnoreCase" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FillTextView">
+        <attr name="filledText" format="string"/>
+        <attr name="fillTextSize" format="dimension"/>
+        <attr name="normalColor" format="color"/>
+        <attr name="fillColor" format="color"/>
+        <attr name="rowSpace" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SignaturePad">
+        <attr name="penMinWidth" format="dimension" />
+        <attr name="penMaxWidth" format="dimension" />
+        <attr name="penColor" format="color" />
+        <attr name="velocityFilterWeight" format="float" />
+        <attr name="clearOnDoubleClick" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleCameraPreview">
+        <attr name="ringWidth" format="dimension" />
+        <attr name="ringNormalColor" format="color" />
+    </declare-styleable>
+
+</resources>

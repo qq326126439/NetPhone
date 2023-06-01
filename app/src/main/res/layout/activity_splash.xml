@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_launcher"
+        android:layout_width="@dimen/dp_199"
+        android:layout_height="@dimen/dp_199"
+        android:layout_marginTop="@dimen/dp_82"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@mipmap/app_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_68"
+        android:text="@string/str_welcome"
+        android:textColor="@color/text_color_393838"
+        android:textSize="@dimen/sp_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_34"
+        android:gravity="center"
+        android:text="@string/str_introduce"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="@dimen/dp_223"
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginBottom="@dimen/dp_58"
+        android:background="@drawable/shape_btn_blue_bg_8"
+        android:text="@string/str_register_new_account"
+        android:textColor="@color/text_color_ffffff"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/dp_223"
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/shape_btn_green_bg_8"
+        android:text="@string/str_login"
+        android:textColor="@color/text_color_ffffff"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

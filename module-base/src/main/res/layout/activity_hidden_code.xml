@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/mTitleBar"
+            layout="@layout/title_bar" />
+
+        <include
+            android:id="@+id/search_view"
+            layout="@layout/common_search_view" />
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/main_white"
+            app:srlAccentColor="@color/main_blue"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlPrimaryColor="@color/main_white">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_hidden_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSelectHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginStart="@dimen/dp_16" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSelectItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!--取消按钮-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_gray_bg_6"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#1D2129"
+            android:textSize="@dimen/sp_16" />
+
+
+        <!--确定按钮-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_blue_bg_6"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</RelativeLayout>

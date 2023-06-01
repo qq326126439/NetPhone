@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.lx.netphone.dev",
+  "variantName": "processZCSF_devDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 1,
+      "versionName": "1.0.1",
+      "outputFile": "Tsc_group_v1.0.1_ZCSF_devDebug_2023_06_01_14_09_build_1.apk"
+    }
+  ]
+}

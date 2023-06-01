@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">splash</string>
+    <string name="str_detection_success">成功</string>
+    <string name="str_detection_fail">校验失败</string>
+    <string name="str_none_data">暂无数据</string>
+    <string name="str_load_fail">加载失败，请点击重新加载</string>
+    <string name="str_loading">加载中…</string>
+    <string name="str_smart_manage_tags">管理标签</string>
+    <string name="str_smart_effective_date">施行日期</string>
+    <string name="str_smart_classification">分类</string>
+    <string name="str_smart_toggle">切换</string>
+    <string name="str_smart_timeliness">时效性</string>
+    <string name="str_smart_reset">重置</string>
+
+    <string name="str_pass">通过</string>
+    <string name="str_reject">拒绝</string>
+</resources>

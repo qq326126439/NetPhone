@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_dialog_white_bg"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_16">
+    <!--android:background="@drawable/dr_loading_bg"-->
+
+    <com.lx.net.widget.circleprogress.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        app:mlpb_background_color="#D4D4D4"
+        app:mlpb_enable_circle_background="false"
+        app:mlpb_progress_color="@color/app_color"
+        app:mlpb_progress_stoke_width="@dimen/dp_2"
+        app:mlpb_progress_text_visibility="invisible"
+        app:mlpb_show_arrow="false"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_text"
+        style="@style/sp14_time"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="加载中..."
+        android:textSize="@dimen/sp_12"/>
+
+
+</LinearLayout>

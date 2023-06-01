@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootProject.projectDir/buildScript/buildTypes/appBuildTypes.gradle"
+apply from: "$rootProject.projectDir/buildScript/android_lib_build.gradle"
+project.dependencies.add("api", project(':library-local'))
+project.dependencies.add("api", 'com.google.code.gson:gson:2.8.9')
+
+android{
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+    }
+}
+

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootProject.projectDir/buildScript/buildTypes/appBuildTypes.gradle"
+
+project.dependencies.add("api", 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4')
+project.dependencies.add("api", 'com.google.code.gson:gson:2.8.9')
+project.dependencies.add("api", 'androidx.room:room-runtime:2.4.0')
+project.dependencies.add("api", 'androidx.room:room-ktx:2.4.0')
+project.dependencies.add("kapt", 'androidx.room:room-compiler:2.4.0')
+project.dependencies.add("testImplementation", 'junit:junit:4.13.2')
+project.dependencies.add("androidTestImplementation", 'androidx.test.ext:junit:1.1.2')
+project.dependencies.add("androidTestImplementation", 'androidx.test.espresso:espresso-core:3.3.0')
+
+android{
+
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation": "$projectDir/schemas".toString(),
+                        "room.incremental": "true",
+                        "room.expandProjection": "true"
+                ]
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+

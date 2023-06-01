@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:innerRadiusRatio="2.3"
+       android:shape="ring"
+       android:thickness="3.8sp"
+       android:useLevel="true">
+    <solid android:color="#ff0000"/>
+
+
+
+</shape>-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <item android:id="@android:id/background">
+         <shape>
+             <corners android:radius="@dimen/dp_50"/>
+             <solid android:color="@android:color/transparent"/>
+         </shape>
+     </item>
+     <item android:id="@android:id/progress">
+         <scale
+             android:drawable="@drawable/round_red"
+             android:scaleWidth="100%"/>
+     </item>-->
+
+
+    <!-- 1 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/dp_2"/>
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/color_white_3"
+                android:centerY="0.75"
+                android:endColor="@color/color_white_3"
+                android:startColor="@color/color_white_3"
+                />
+           <!-- <solid android:color="@color/color_white_3"/>-->
+        </shape>
+    </item>
+    <!-- 2 -->
+     <item android:id="@android:id/secondaryProgress">
+         <clip>
+             <shape>
+                 <corners android:radius="5dip" />
+                 <gradient
+                     android:startColor="@color/app_wrap_red_color"
+                     android:centerColor="@color/app_wrap_red_color"
+                     android:centerY="0.75"
+                     android:endColor="@color/app_wrap_red_color"
+                     android:angle="270"
+                     />
+             </shape>
+         </clip>
+     </item>
+    <!-- 3 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/dp_2"/>
+                <gradient
+                    android:angle="270"
+                    android:centerColor="@color/app_wrap_red_color"
+                    android:centerY="0.75"
+                    android:endColor="@color/app_wrap_red_color"
+                    android:startColor="@color/app_wrap_red_color"
+                    />
+               <!-- <solid android:color="@color/app_wrap_red_color"/>-->
+            </shape>
+        </clip>
+    </item>
+
+
+</layer-list>

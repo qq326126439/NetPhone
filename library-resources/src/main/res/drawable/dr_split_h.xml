@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape >
+                <gradient
+                android:endColor="@color/app_divide_line_color"
+                android:centerColor="@color/app_divide_line_color"
+                android:startColor="@color/app_divide_line_color"
+                android:angle="90"
+                />
+            <padding android:bottom="@dimen/dp_0_5"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient
+                android:endColor="@color/app_divide_line_color"
+                android:centerColor="@color/app_divide_line_color"
+                android:startColor="@color/app_divide_line_color"
+                android:angle="90"
+                />
+            <padding android:right="@dimen/dp_0_5"/>
+        </shape>
+    </item>
+</layer-list>

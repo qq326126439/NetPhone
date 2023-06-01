@@ -1,0 +1,20 @@
+apply from: "$rootProject.projectDir/buildScript/android_function_lib_build.gradle"
+project.dependencies.add("api", 'com.aliyun.ams:alicloud-android-utdid:1.5.2')
+project.dependencies.add("api", 'com.aliyun.dpa:oss-android-sdk:2.9.5'){
+    exclude module: 'okhttp'
+    exclude module: 'okio'
+}
+
+android {
+
+    buildFeatures {
+
+        viewBinding true
+    }
+
+    defaultConfig {
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+}

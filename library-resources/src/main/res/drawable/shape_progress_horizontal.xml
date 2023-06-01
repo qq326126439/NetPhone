@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/dp_6" />
+            <gradient
+                android:angle="0"
+                android:centerColor="#F0F2F5"
+                android:centerY="0.75"
+                android:endColor="#F0F2F5"
+                android:startColor="#F0F2F5" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@drawable/progress_bar_ct"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

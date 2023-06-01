@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_stroke_gray_main_bg_2"
+    android:orientation="horizontal"
+    android:layout_marginEnd="@dimen/dp_4"
+    android:layout_marginTop="@dimen/dp_10"
+    android:padding="@dimen/dp_4">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_4"
+        android:text="设备管道名称"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/sp_16"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        app:srcCompat="@drawable/iv_delete_x_gray" />
+</androidx.appcompat.widget.LinearLayoutCompat>

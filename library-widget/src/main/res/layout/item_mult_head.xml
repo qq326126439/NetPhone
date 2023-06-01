@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_22"
+    android:layout_marginTop="@dimen/dp_8">
+
+    <TextView
+        style="@style/text1_16_wrap_style"
+        android:text="危害辨识" />
+
+    <TextView
+        android:id="@+id/tvSelAll"
+        style="@style/text_16_blue_wrap_style"
+        android:layout_alignParentEnd="true"
+        android:text="全选" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_check_measures"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:background="@drawable/shape_bottom_line_gray">
+
+    <TextView
+        android:id="@+id/tv_text_type"
+        style="@style/text1_16_wrap_style"
+        android:text="控制措施核对"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toEndOf="@+id/tv_text_type"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iv_imp_start" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvChecking"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_list_blue" />
+
+    <TextView
+        android:id="@+id/tvChecking"
+        style="@style/text_16_blue_wrap_style"
+        android:text="去核对"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

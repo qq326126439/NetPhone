@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_bg_8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/shape_bottom_line_gray_8"
+        android:gravity="center"
+        android:text="选择人员"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_title_text"
+        style="@style/text1_16_wrap_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:background="@drawable/shape_bottom_line_gray"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_16"
+        android:text="已选择: 31人，其中包含有4个部门（含子部门）" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_organ_popup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/main_white"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_popup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:background="@color/main_white">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@drawable/shape_top_line_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llSelected"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_16"
+            android:background="@drawable/shape_stroke_white_8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选:  "
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvSelectedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvMaxNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/47"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_width="@dimen/dp_212"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_16"
+            android:background="@drawable/shape_btn_blue_bg_8"
+            android:text="确定"
+            android:textColor="@color/main_white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

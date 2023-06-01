@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetPhone</string>
+    <string name="str_welcome">欢迎使用毅佰联合</string>
+    <string name="str_introduce">一款安全的通讯聊天软件!所有信息都是通过\n端对端加密,您可以随时随地畅聊!</string>
+    <string name="str_register">注册</string>
+    <string name="str_login">登录</string>
+    <string name="str_register_new_account">注册新账号</string>
+    <string name="str_edit_email">请输入邮箱号码</string>
+    <string name="str_edit_verify">请输入验证码</string>
+    <string name="str_get_verify_code">获取验证码</string>
+    <string name="str_input_verify_code">请输入邀请码</string>
+    <string name="str_how_to_get_code">向你朋友或客服询问注册邀请码</string>
+    <string name="str_has_account">已有账号</string>
+    <string name="str_no_account">没有账号</string>
+    <string name="str_direct_login">直接登录</string>
+    <string name="str_to_register">前往注册</string>
+    <string name="str_agree">我已阅读并同意</string>
+    <string name="str_agree_xx">《xxx用户协议》</string>
+    <string name="str_code_time">有效期：2分钟</string>
+
+
+
+    <string name="refuse">拒绝</string>
+    <string name="confirm">确认</string>
+    <string name="confirm1">确定</string>
+    <string name="str_next_step">下一步</string>
+    <string name="cancel">取消</string>
+    <string name="str_reset">重置</string>
+    <string name="str_adopt">通过</string>
+    <string name="edit">编辑</string>
+    <string name="str_entrust">委托</string>
+    <string name="str_strike_through">---</string>
+    <string name="sw_no_content">暂无数据</string>
+    <string name="search_hint">搜索</string>
+    <string name="prompt">提示</string>
+    <string name="save">保存</string>
+    <string name="submit">提交</string>
+    <string name="str_update">修改</string>
+    <string name="fabulous">赞</string>
+    <string name="comment">评论</string>
+    <string name="str_yes">是</string>
+    <string name="str_no">否</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_approval">审批</string>
+    <string name="str_all_select">全选</string>
+    <string name="str_input">输入</string>
+    <string name="str_select">选择</string>
+    <string name="str_format_select_num">已选择%s条</string>
+    <string name="str_percent">%%s</string>
+    <string name="str_face_recognition_login">人脸识别登录</string>
+    <string name="switch_compny">确定要切换当前公司吗?</string>
+    <string name="this_compny_is_not_exist">权限不足，不能切换公司</string>
+    <string name="currently_no_network">当前无网络，请检查网络设置</string>
+    <string name="no_data_please_refresh">暂无,要不刷新试试？</string>
+    <string name="clear_action">清空已做检查的检查项，重新做检查.</string>
+    <string name="noclear_action">保留已做检查，适用于新的受检对象上.</string>
+    <string name="table_have_no_check_object">当前表没有相关联的受检对象</string>
+    <string name="str_filter_not_init">未初始化列表</string>
+    <string name="str_select_result">请选择通过或不通过</string>
+    <string name="str_no_suggest">请填写审核意见</string>
+    <string name="str_no_select_responsible">请选择作业负责人</string>
+    <string name="str_try_again">数据错误，请重试</string>
+
+    <string name="str_select_staff">选择部门</string>
+    <string name="str_select_hidden_code">选择隐患编码</string>
+    <string name="str_select_personnel">选择人员</string>
+    <string name="str_specific_personnel">特定库人员</string>
+    <string name="str_select_empty">未指定选择类型</string>
+    <string name="str_condition_empty">未指定选择条件</string>
+
+    <!---->
+    <string name="submit_check_record_hint">是否提交当前检查结果?\"确定\"将完成提交.</string>
+    <string name="submit_do_commitment_hint">是否提交当前执行结果?\"确定\"将完成提交.</string>
+    <!--账户设置-->
+    <string name="account_configuration_information_clear_success">用户配置信息清空成功！</string>
+    <string name="account_prompt1">是否重置用户数据，本次操作会重新初始化数据</string>
+
+    <!--反馈页面-->
+    <string name="feedback_uploading">正在上传…</string>
+    <string name="feedback_ths_for_support">感谢您的支持，您的建议我们已经收到!</string>
+    <string name="feedback_upload_fail">上传失败，请重试</string>
+    <string name="feedback_is_sure">确定不反馈吗，您的支持是我们的进步的动力</string>
+
+    <!--计划检查-->
+    <string name="create_new_plan">新建计划性检查任务</string>
+    <string name="plan_check">计划性检查</string>
+    <string name="plan_name">计划名称</string>
+    <string name="end_time">结束时间</string>
+    <string name="start_time">起始时间</string>
+    <string name="please_choose_check_user">请选择检查人员</string>
+    <string name="please_choose_org">请选择机构或者部门</string>
+    <string name="check_table">检查表</string>
+    <string name="check_user">检查人员</string>
+    <string name="check_remark">备注</string>
+    <string name="click_write">点击填写</string>
+    <string name="click_choose">点击选择</string>
+    <string name="task_details">任务详情</string>
+    <string name="status">状态</string>
+    <string name="date">日期</string>
+    <string name="check_plan_year">一年</string>
+    <string name="check_plan_month">一月</string>
+    <string name="check_plan_quarter">本季度</string>
+    <string name="check_plan_week">一周</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="do_complete">已完成</string>
+    <string name="do_un_complete">未完成</string>
+    <string name="do_expire">已过期</string>
+    <string name="no_check_plan">未查询到相关的检查计划</string>
+    <string name="confirm_post_title">提交确认</string>
+    <string name="confirm_delete_title">删除确认</string>
+    <string name="confirm_post_content">是否提交当前新建计划</string>
+    <string name="start_time_notify">起始时间不能小于当前时间</string>
+    <string name="start_time_notify2">起始时间不能大于结束时间</string>
+    <string name="end_time_notify2">结束时间不能大于当前时间</string>
+    <string name="end_time_notify">结束时间要大于起始时间</string>
+    <string name="choose_start_time_first">请先选择起始时间</string>
+    <string name="please_write_message_complete">请将信息填写完整</string>
+    <string name="submit_plan_file">提交计划失败,后台上传自动</string>
+    <string name="submit_plan_success">提交计划成功</string>
+    <string name="no_check_user_data">没有用户数据</string>
+    <string name="check_plan_is_complete">检查计划已经完成</string>
+    <string name="check_plan_is_expire">检查计划已经过期</string>
+    <string name="plan_table_is_not_found">检查计划关联的检查表不存在</string>
+    <string name="check_plan_incomplete_information">检查计划信息不全</string>
+    <string name="search_value_is_not_empty">请输入合适的搜索内容</string>
+
+    <!--专家支持-->
+    <string name="expert_support_title">专家支持</string>
+    <string name="no_expert_support">暂无数据</string>
+    <string name="check_method">检查方法</string>
+    <string name="method_detail">方法详情</string>
+    <string name="check_basis">检查依据</string>
+    <string name="basis_detail">依据详情</string>
+    <string name="accident_case">讲解与案例</string>
+    <string name="accident_image">图片</string>
+    <string name="accident_detail">事故详情</string>
+    <string name="accident_introduce">事故介绍</string>
+    <string name="accident_video">事故视频</string>
+    <string name="related_documents">参考资料</string>
+    <string name="related_video">相关视频</string>
+    <string name="standard_image">正确</string>
+    <string name="un_standard_image">错误</string>
+    <string name="down_load_success">下载成功</string>
+    <string name="down_load_fail">下载失败</string>
+    <string name="open">打开</string>
+    <string name="down_load">下载</string>
+    <string name="picture">标准操作图片</string>
+    <string name="error_picture">错误操作图片</string>
+    <string name="check_documents">事故案例视频</string>
+    <string name="post_data_fail">请求数据失败!</string>
+    <string name="data_is_loading">数据正在加载中…</string>
+
+    <!--日常检查-->
+    <string name="qualified">合格</string>
+    <string name="un_qualified">不合格</string>
+    <string name="un_involve">不涉及</string>
+    <string name="daily_check">非计划检查</string>
+    <string name="do_check">检查</string>
+    <string name="check_object">受检对象</string>
+    <string name="add_check_remark">添加检查备注</string>
+    <string name="check_object_information_is_lost">受检对象信息不全</string>
+    <string name="start_check">开始检查</string>
+    <string name="choose_check_object">选择受检对象</string>
+    <string name="have_no_check_object">没有查询到受检对象</string>
+    <string name="choose_check_table">选择检查表</string>
+    <string name="choose_check_object_first">请先选择受检对象</string>
+    <string name="choose_check_object_table_first">请先选择受检对象和检查表</string>
+    <string name="no_need_to_submit">没有做任何检查，不需要提交</string>
+    <string name="if_submit_current_result">是否提交当前检查结果，确定将完成当前检查</string>
+    <string name="no_need_to_save">没有做任何检查，不需要保存</string>
+    <string name="confirm_save_draft">保存草稿确认</string>
+    <string name="if_save_current_check">是否保存当前检查，确定将本地保存，下次可以继续该检查</string>
+    <string name="upload_fail">上传失败,后台正在重试</string>
+    <string name="upload_success">上传成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="submit_success">提交成功</string>
+    <string name="save_draft_success">保存草稿成功</string>
+    <string name="return_prompt">返回提示</string>
+    <string name="give_up_operation">是否放弃本次操作?确定将不对本次操作数据保存</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete_picture">删除图片</string>
+    <string name="save_data">正在提交数据，请稍后…</string>
+    <string name="str_written_not_verify">请选择书面审查人员</string>
+    <string name="str_sign_not_verify">请选择许可签发人员</string>
+
+
+    <string name="str_close_finish_not_verify">请选择作业完成人员</string>
+    <string name="str_close_cancel_verify">请选择作业取消人员</string>
+    <string name="str_close_delay_not_verify">请选择作业延期人员</string>
+
+    <string name="check_qualified_des">请填写补充描述</string>
+    <string name="check_qualified_attachment">请补充图片或者短视频</string>
+    <string name="communication_description">请填写沟通记录描述</string>
+    <string name="please_input_recommended_measure">请填写建议措施</string>
+    <string name="physical_truth">请填写遇到的实际问题</string>
+    <string name="please_input_temporary_control_measures">请填写临时控制措施</string>
+
+    <string name="gave_up_unqualified_data">是否放弃该项不合格数据</string>
+    <string name="problem_description">问题描述</string>
+    <string name="temporary_control_measures">临时控制措施</string>
+    <string name="communication_record">沟通记录</string>
+    <string name="immediate_corrective_action">即时整改措施</string>
+    <string name="recommended_measure">建议措施</string>
+    <string name="recommended_maydanger">潜在危害</string>
+    <string name="problem_description_hint">请用几行文字描述您遇到的实际问题</string>
+    <string name="temporary_control_measures_hint">请用几行文字描述您临时控制措施</string>
+    <string name="communication_record_hint">请用几行文字描述沟通记录</string>
+    <string name="immediate_corrective_action_hint">请用几行文字描述即时整改措施</string>
+    <string name="recommended_measure_hint">请用几行文字描述建议措施</string>
+    <string name="choose_max">最多只能选择</string>
+    <string name="choose_pic_count_end">张图片</string>
+    <string name="choose_one_video">最多只能选择1个视频</string>
+
+    <!--报表-->
+    <string name="form_manager">报表管理</string>
+    <string name="form_filter">筛选</string>
+    <string name="form_organization">机构</string>
+    <string name="form_department">部门</string>
+    <string name="form_check_obj">受检对象</string>
+    <string name="form_person">人员</string>
+    <string name="form_unqualified_item">不合格项</string>
+    <string name="form_qualified_rate">合格率</string>
+    <string name="form_check_person">检查人</string>
+    <string name="form_check_item">检查项</string>
+    <string name="form_rectification_situation">整改情况</string>
+    <string name="form_rectification_rate">整改率</string>
+    <string name="form_un_rectification">超期未整改</string>
+    <string name="form_individual">个体</string>
+    <string name="form_get_data_fail">没有请求到报表数据</string>
+    <string name="form_choose_statistical_item_first">请先选择统计项目</string>
+    <string name="form_choose_filter_condition">请选择完整的筛选条件</string>
+    <string name="form_choose_filter_object">请选择筛选对象</string>
+    <string name="form_click_choose">点击选择</string>
+    <string name="form_filter_result">筛选结果</string>
+    <string name="form_data_lost">数据缺省</string>
+    <string name="form_filter_obj_count_limit">筛选对象个数保持在7个以内</string>
+    <string name="form_trend_chart">趋势图</string>
+    <string name="form_average_value_statistics">平均值统计</string>
+    <string name="form_absolutely_value_statistics">绝对值统计</string>
+    <string name="loading">加载中</string>
+    <string name="str_to_operate">去选择</string>
+    <string name="str_sign_to_confirm">签名确认</string>
+
+    <!--我的收藏-->
+    <string name="str_my_collection">我的收藏</string>
+    <string name="str_please_enter_key_words">请输入关键字</string>
+    <string name="str_hint_please_enter">请输入</string>
+
+<!--    双重预防中心-->
+    <string name="str_view_hidden_dangers">查看隐患</string>
+
+    <string name="str_prevention_risk_check">风险点检</string>
+    <string name="str_prevention_pending_inspection">待检查</string>
+    <string name="str_prevention_check_completed">已完成检查</string>
+    <string name="str_smart_no_more_data">暂无更多数据</string>
+    <string name="str_risk_check">去检查</string>
+    <string name="str_risk_checked">查看记录</string>
+    <string name="str_check_check">检查核对</string>
+    <string name="str_qualified">合格</string>
+    <string name="str_failed">不合格</string>
+    <string name="str_not_involving">不涉及</string>
+    <string name="str_not_checked">未检查</string>
+    <string name="str_report_problem">上报问题</string>
+    <string name="str_assessment_situation">考核情况</string>
+    <string name="str_rectification">现场整改</string>
+    <string name="str_cancel_on_site_rectification">取消现场整改</string>
+    <string name="str_all">全部</string>
+    <string name="str_daily_inspection">日常检查</string>
+    <string name="str_pending_submission">待提交</string>
+    <string name="str_submitted">已提交</string>
+    <string name="str_submit_question">提交问题</string>
+    <string name="str_submission_question">提报问题</string>
+    <string name="str_to_view">去查看</string>
+    <string name="str_number_of_problems_found">发现问题数:</string>
+    <string name="str_check_date">检查日期:  %s</string>
+    <string name="str_check_date_nos">检查日期</string>
+    <string name="str_checker">检查人:  %s</string>
+    <string name="str_inspected_unit">被检查单位</string>
+    <string name="str_checker_nos">检查人</string>
+</resources>

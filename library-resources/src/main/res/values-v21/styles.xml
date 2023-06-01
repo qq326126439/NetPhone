@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme.TransparentNoActionBar">
+
+        <!-- 其他设置 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style
+        name="NotificationInfo"
+
+        parent="android:TextAppearance.StatusBar.EventContent"/>
+       <!-- parent="android:TextAppearance.Material.Notification.Info" />-->
+    <style
+        name="NotificationTitle"
+
+        parent="android:TextAppearance.Material.Notification.Info" />
+       <!-- parent="android:TextAppearance.Material.Notification.Title" />-->
+    <!--parent="android:TextAppearance.Material.Notification" />-->
+</resources>

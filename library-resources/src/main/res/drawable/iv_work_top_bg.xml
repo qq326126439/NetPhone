@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:drawable="@color/main_white">
+  </item>
+  <item
+      android:drawable="@drawable/ic_work_top_bg">
+  </item>
+
+</layer-list>

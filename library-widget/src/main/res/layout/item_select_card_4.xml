@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginEnd="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/tv_select_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_btn_blue_bg_6"
+        android:lines="1"
+        android:minHeight="@dimen/dp_28"
+        android:minWidth="@dimen/dp_60"
+        android:padding="@dimen/dp_4"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="交接班"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>

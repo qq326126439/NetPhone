@@ -1,0 +1,12 @@
+apply from: "$rootProject.projectDir/buildScript/module_common_build.gradle"
+
+android {
+
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+}

@@ -1,0 +1,221 @@
+<resources>
+
+    <!--323232黑色字体-->
+    <style name="sp20_text_white_style" parent="sp20_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp19_text_white_style" parent="sp19_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp18_text_white_style" parent="sp18_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp17_text_white_style" parent="sp17_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp16_text_white_style" parent="sp16_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp15_text_white_style" parent="sp15_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+
+    <style name="sp14_text_white_style" parent="sp14_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp13_text_white_style" parent="sp13_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp12_text_white_style" parent="sp12_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp11_text_white_style" parent="sp11_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp10_text_white_style" parent="sp10_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp9_text_white_style" parent="sp9_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp8_text_white_style" parent="sp8_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+
+    <style name="sp6_text_white_style" parent="sp6_text_size">
+        <item name="android:textColor">@color/white_text_color</item>
+    </style>
+    <!--fffffff白色字体-->
+    <style name="sp20_text_black_style" parent="sp20_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp19_text_black_style" parent="sp19_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp18_text_black_style" parent="sp18_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp17_text_black_style" parent="sp17_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp16_text_black_style" parent="sp16_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp15_text_black_style" parent="sp15_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp14_text_black_style" parent="sp14_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp13_text_black_style" parent="sp13_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp12_text_black_style" parent="sp12_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp11_text_black_style" parent="sp11_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp10_text_black_style" parent="sp10_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="sp9_text_black_style" parent="sp9_text_size">
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+
+    <!--969696浅灰色字体-->
+    <style name="sp20_text_light_gray_style" parent="sp20_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp19_text_light_gray_style" parent="sp19_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp18_text_light_gray_style" parent="sp18_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp17_text_light_gray_style" parent="sp17_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp16_text_light_gray_style" parent="sp16_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp15_text_light_gray_style" parent="sp15_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp14_text_light_gray_style" parent="sp14_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp13_text_light_gray_style" parent="sp13_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp12_text_light_gray_style" parent="sp12_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp11_text_light_gray_style" parent="sp11_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp10_text_light_gray_style" parent="sp10_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+    <style name="sp9_text_light_gray_style" parent="sp9_text_size">
+        <item name="android:textColor">@color/light_gray_text_color</item>
+    </style>
+
+
+    <style name="sp20_text_size">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="sp19_text_size">
+        <item name="android:textSize">@dimen/sp_19</item>
+    </style>
+
+    <style name="sp18_text_size">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="sp17_text_size">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="sp16_text_size">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="sp15_text_size">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="sp14_text_size">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="sp13_text_size">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="sp12_text_size">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="sp11_text_size">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="sp10_text_size">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="sp9_text_size">
+        <item name="android:textSize">@dimen/sp_9</item>
+    </style>
+
+    <style name="sp8_text_size">
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+
+    <style name="sp6_text_size">
+        <item name="android:textSize">@dimen/sp_6</item>
+    </style>
+
+    <style name="sp20_text_title_black_style" parent="sp20_text_size">
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

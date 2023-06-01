@@ -1,0 +1,73 @@
+def getDependencyModule() {
+    return project.properties.get("dependencyModule")
+}
+
+def modules = getDependencyModule().split(',')
+
+def contains = modules.contains(project.getName())
+
+if (contains) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+    apply from: "$rootProject.projectDir/buildScript/buildTypes/appProductFlavors.gradle"
+}
+
+delete project.buildDir
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootProject.projectDir/buildScript/router/lib_arouter.gradle"
+project.dependencies.add("api", 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0')
+project.dependencies.add("api", 'com.github.chrisbanes:PhotoView:2.3.0')
+project.dependencies.add("api", 'io.reactivex.rxjava3:rxjava:3.0.0')
+project.dependencies.add("api", 'io.reactivex.rxjava3:rxandroid:3.0.0')
+project.dependencies.add("api", project(':module-base'))
+project.dependencies.add("testImplementation", 'junit:junit:4.13.2')
+project.dependencies.add("androidTestImplementation", 'androidx.test.ext:junit:1.1.2')
+project.dependencies.add("androidTestImplementation", 'androidx.test.espresso:espresso-core:3.3.0')
+
+android {
+
+    buildFeatures {
+
+        viewBinding true
+    }
+
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            if (contains) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            }
+        }
+    }
+
+    defaultConfig {
+        // 仅支持 中文
+        resConfigs "zh"
+        //armeabi，armeabi-v7a，x86，mips，arm64-v8a，mips64，x86_64
+        ndk { abiFilters 'armeabi-v7a' }// 其他忽略
+    }
+
+}

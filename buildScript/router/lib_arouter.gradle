@@ -1,0 +1,14 @@
+android {
+
+    kapt {
+        arguments {
+            // 路由框架译配置
+            // module名称
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+
+    project.dependencies.add("kapt", "com.alibaba:arouter-compiler:$rootProject.router_compiler_version")
+    project.dependencies.add("api", project(':library-router'))
+
+}

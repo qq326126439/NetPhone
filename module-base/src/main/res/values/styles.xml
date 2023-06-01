@@ -1,0 +1,10 @@
+<resources>
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_Primary</item>
+        <item name="colorPrimaryDark">@color/color_PrimaryDark</item>
+        <item name="colorAccent">@color/color_blue</item>
+        <!-- 锁定布局在发生以下改变时，不重置状态 -->
+        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+</resources>

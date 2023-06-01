@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/app/src/main/res/layout/activity_main_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/app/src/main/res/menu/menu_bottom_navigation_view_test1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/library-resources/src/main/res/drawable/shape_bottom_line_gray.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/library-resources/src/main/res/drawable/shape_btn_blue_0183FD_bg_8.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/library-resources/src/main/res/drawable/shape_btn_blue_bg_8.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/library-resources/src/main/res/drawable/shape_btn_green_bg_8.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-contact/src/main/res/layout/fragment_contact.xml" value="0.3365036231884058" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-find/src/main/res/layout/fragment_find.xml" value="0.3365036231884058" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-login/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-message/src/main/res/layout/fragment_message.xml" value="0.3365036231884058" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-setting/src/main/res/layout/fragment_message.xml" value="0.3365036231884058" />
+        <entry key="..\:/Users/Windows/Desktop/NetPhone/module-setting/src/main/res/layout/fragment_setting.xml" value="0.17198581560283688" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

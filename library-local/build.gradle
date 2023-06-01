@@ -1,0 +1,10 @@
+apply from: "$rootProject.projectDir/buildScript/android_local_lib_build.gradle"
+
+android {
+
+    defaultConfig {
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+}

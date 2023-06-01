@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击背景-->
+    <item   android:drawable="@drawable/shape_btn_radius_bottom_8_blue_bg" android:state_pressed="true">
+
+    </item>
+    <!--默认背景-->
+    <item android:drawable="@drawable/shape_btn_radius_bottom_8_white_bg"/>
+</selector>

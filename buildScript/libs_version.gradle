@@ -1,0 +1,7 @@
+ext {
+
+    router_api_version = "1.5.2"
+    router_compiler_version = "1.5.2"
+//    router_register_version = "1.0.2"
+
+}

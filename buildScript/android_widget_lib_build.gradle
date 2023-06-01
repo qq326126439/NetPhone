@@ -1,0 +1,31 @@
+apply from: "$rootProject.projectDir/buildScript/android_function_lib_build.gradle"
+project.dependencies.add("api", 'com.kingja.loadsir:loadsir:1.3.8')
+project.dependencies.add("api", 'androidx.constraintlayout:constraintlayout:2.1.1')
+project.dependencies.add("api", 'com.hyman:flowlayout-lib:1.1.2')
+//project.dependencies.add("api", 'com.geyifeng.immersionbar:immersionbar:3.2.2')
+//project.dependencies.add("api", 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2')
+project.dependencies.add("api", 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4')
+project.dependencies.add("api", project(':library-common'))
+project.dependencies.add("api", project(':library-resources'))
+project.dependencies.add("api", 'com.contrarywind:Android-PickerView:4.1.9')
+
+android{
+
+    buildFeatures {
+
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+}
+

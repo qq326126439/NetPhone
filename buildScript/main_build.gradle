@@ -1,0 +1,82 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.alibaba.arouter'
+apply from: "$rootProject.projectDir/buildScript/buildTypes/appBuildTypes.gradle"
+apply from: "$rootProject.projectDir/buildScript/buildTypes/appProductFlavors.gradle"
+apply from: "$rootProject.projectDir/buildScript/router/lib_arouter.gradle"
+apply from: "$rootProject.projectDir/buildScript/module_common_build.gradle"
+
+def getDependencyModule() {
+    return project.properties.get("dependencyModule")
+}
+
+def static buildTime() {
+    def df = new SimpleDateFormat("yyyy_MM_dd_HH_mm")
+    df.setTimeZone(TimeZone.getDefault())
+    return df.format(new Date())
+}
+
+def modules = getDependencyModule().split(',')
+
+android{
+
+    buildTypes {
+        release {
+//            zipAlignEnabled true // Zipalign优化
+//            shrinkResources true  // 移除无用的resource文件
+            resValue "string", "modules", getDependencyModule()
+        }
+
+        debug {
+            resValue "string", "modules", getDependencyModule()
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        // 仅支持 中文
+        resConfigs "zh"
+        //armeabi，armeabi-v7a，x86，mips，arm64-v8a，mips64，x86_64
+        ndk { abiFilters 'armeabi-v7a' }// 其他忽略
+    }
+
+    //在Android代码块中添加如下配置：（可优化transformClassDexBuilderForDebug的时间）
+    dexOptions {
+        preDexLibraries true
+        maxProcessCount 8
+    }
+
+    // 自定义APK输出配置
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def project = "Tsc_group"
+                def separator = "_"
+                def flavorName = variant.name
+                // 输出apk名称为Tsc_group_v1.18.040212_SW_beta_build_111.apk
+                def fileName = project + separator + "v" + "${variant.versionName}" + separator + "${flavorName}" + separator + "${buildTime()}" + separator + "build_" + "${variant.versionCode}" + ".apk"
+                outputFileName = fileName
+            }
+        }
+    }
+
+}
+
+modules.each {
+    module ->
+        print("---" + module)
+        project.dependencies.add("implementation", project(':' + module))
+}
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:background="@drawable/item_risk_task_bg_weight"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            tools:text="财务管理"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/sp_16"
+            android:padding="@dimen/dp_8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@drawable/selector_check_msg_bg"
+            android:button="@null"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_table_name"-->
+<!--        android:visibility="visible"-->
+<!--        style="@style/risk_check_tv_weight"-->
+<!--        tools:text="章节：第一章第二条" />-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        tools:text="考核内容: 在中华人民共和国境内的企业、个体经济组织（以下统称用人单位）和与之形成劳动关系的劳动者，适用本法。"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_2"
+        android:padding="@dimen/dp_8"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_standard"
+        tools:text="考核标准: 在中华人民共和国境内的企业、个体经济组织（以下统称用人单位）和与之形成劳动关系的劳动者，适用本法。"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_2"
+        android:padding="@dimen/dp_8"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        tools:text="考核单位: 在中华人民共和国境内的企业、个体经济组织（以下统称用人单位）和与之形成劳动关系的劳动者，适用本法。"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_2"
+        android:padding="@dimen/dp_8"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

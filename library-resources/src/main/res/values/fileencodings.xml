@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--视频和音频要多两个参数，特意单独列出来-->
+    <array name="fileMedia">
+        <item>mp3</item>
+        <item>wav</item>
+        <item>ogg</item>
+        <item>midi</item>
+
+        <item>mp4</item>
+        <item>rmvb</item>
+        <item>avi</item>
+        <item>flv</item>
+    </array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 空心圆 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <!-- 图形填充色 -->
+    <solid android:color="@color/text_color_1" />
+    <!-- 图形尺寸 -->
+    <size
+        android:width="@dimen/dp_24"
+        android:height="@dimen/dp_24" />
+</shape>

@@ -1,0 +1,29 @@
+android {
+
+    defaultConfig {
+        flavorDimensions "versionCode"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true  // 混淆
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources false  // 移除无用的resource文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    //添加此代码可以解决viewBinding时不时爆红的问题
+    sourceSets {
+        debug {
+            java.srcDirs = ['src/main/java', 'build/generated/data_binding_base_class_source_out/debug/out']
+        }
+    }
+
+}

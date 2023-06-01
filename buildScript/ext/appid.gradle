@@ -1,0 +1,12 @@
+ext{
+
+    appid = "com.lx.netphone"
+    appDevId = "com.lx.netphone.dev"
+
+
+    //正式包版本号
+    versionCode = 1
+    versionName = "1.0.0"
+}
+
+

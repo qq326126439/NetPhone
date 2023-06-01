@@ -1,0 +1,6 @@
+ext {
+
+    //研发环境
+    versionCodeDev = 1
+    versionNameDev = "1.0.1"
+}

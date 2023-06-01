@@ -1,0 +1,28 @@
+android {
+
+    defaultConfig {
+        flavorDimensions "versionCode"
+    }
+
+    productFlavors {
+
+        //中车青岛四方 研发环境
+        ZCSF_dev {
+            applicationId rootProject.appDevId
+            versionCode rootProject.versionCodeDev
+            versionName rootProject.versionNameDev
+            buildConfigField('String', 'EXTR_STORAGE_DIR_NAME', '"netphone.dev"')
+            buildConfigField('boolean', 'CHARSET_IS_UTF_8', 'false')
+            buildConfigField 'String', 'BASE_URL', '"http://192.168.10.45:9988"'
+//            buildConfigField 'String', 'BASE_URL', '"http://192.168.19.136:9016"'
+//            buildConfigField 'String', 'CHECK_APP_VERSION', '""'
+//            buildConfigField 'String', 'COMP_NAME', '"crrc"'
+//            buildConfigField 'String', 'RUN_ENVIRONMENT', '"dev"'
+//            buildConfigField 'String', 'APP_NAME', '"四方_开发环境"'
+
+        }
+    }
+
+
+
+}

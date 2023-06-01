@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:minHeight="@dimen/dp_32">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_select_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_multi_no_select_bg"
+        android:lines="1"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_6"
+        android:singleLine="true"
+        android:text="法规"
+        android:textColor="#4E5969"
+        android:textSize="@dimen/sp_14" />
+
+
+</RelativeLayout>
